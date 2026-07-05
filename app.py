@@ -16,7 +16,7 @@ else:
 if st.button("Add Vehicle"):
     vehicle = {"Vehicle Number": vehicle_number,"Owner Name": owner_name,"Vehicle Type": vehicle_type,"Toll Tax": tax}
     st.session_state.vehicles.append(vehicle)
-    st.success("✅ Vehicle Added Successfully!")
+    st.success("Vehicle Added Successfully!")
 if len(st.session_state.vehicles) > 0:
     st.subheader("Vehicle Records")
     df = pd.DataFrame(st.session_state.vehicles)
